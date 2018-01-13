@@ -1,0 +1,80 @@
+<!--6번째 입니다.-->
+<html>
+  <head>
+    <meta charset="utf-8" lang="kor">
+    <title>연화인 능력 검정 시험</title>
+    <style>
+      h1 {
+        font-size: 70px;
+        font-family: 궁서;
+
+
+      }
+      p {
+        margin-bottom: 50px;
+
+      }
+      #article {
+        text-align: center;
+      }
+
+      #header {
+        margin-top: 30px;
+        text-align: center;
+      }
+      #article img {
+        width: 600px;
+      }
+      img #logo {
+        height: 70%;
+      }
+      video {
+        width: 600px;
+      }
+      small {
+        color: gray;
+      }
+
+
+
+    </style>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+      window.onload = function() {
+        let answer = document.getElementById('answer')
+
+        answer.onclick = function () {
+          let answer2 = prompt('답변을 입력해 주세요')
+          if (answer2 != '시대유감') {
+            alert('탈락')
+            location.href="../sad.html"
+          } else {
+            location.href="hanabank.html"
+          }
+        }
+        let logo = document.getElementById('logo')
+
+
+        logo.onclick = function () {
+          location.href="../index.html"
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="../picture/yeonhwa.jpg"/>
+      <h1>연화인 능력 검정 시험</h1>
+
+    </header>
+    <div id="article">
+      <article>
+        <video src="../video/jongdancing6.mp4" controls autoplay></video>
+        <p>이종민이 춤 추고 있는 노래 제목은 무엇인가?
+        </p>
+        <button id="answer">답변하기</button>
+      </article>
+  </div>
+  </body>
+</html>
