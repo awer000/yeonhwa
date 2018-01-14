@@ -1,0 +1,59 @@
+<!--10번째 입니다.-->
+<html>
+  <head>
+    <meta charset="utf-8" lang="kor">
+    <title>연화인 능력 검정 시험</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+      window.onload = function() {
+        let answer = document.getElementById('answer')
+
+        answer.onclick = function () {
+          let answer2 = prompt('답변을 입력해 주세요')
+          if (answer2 != '010310') {
+            alert('탈락')
+            location.href="../sad.html"
+          } else {
+            location.href="../2meanonezzang.html"
+          }
+        }
+        let logo = document.getElementById('logo')
+
+
+        logo.onclick = function () {
+          location.href="../index.html"
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="../picture/yeonhwa.jpg"/>
+      <h1>제 2 회 연화인 능력 검정 시험</h1>
+
+    </header>
+    <div id="article">
+      <article>
+        <img src="../picture/playing10.png">
+        <p>Q10. 이 곳에서 안민원이 연주한 곡의 악기 세 가지를 고르시오 <small><br>(정답 입력은 번호가 빠른 순으로 입력 <br> 예> 피콜로, 오르간, 탐탐일 경우는 062820이 아니라, 062028로 적어야 함)</small>
+        </p>
+
+        <p>
+          <h3>현악기</h3>
+          01.바이올린  02.비올라  03.첼로  04.콘트라베이스  05.하프
+          <h3>목관악기</h3>
+          06.피콜로  07.플룻 08.오보에 09.잉글리시 호른 10.클라리넷 11.베이스 클라리넷 12.바순 13.콘트라 바순
+          <h3>타악기</h3>
+          14.팀파니 15.큰북 16.작은북 17.트라이앵글 18.탬버린 19.심벌즈 20.탐탐 21.실로폰 22.글로켄슈필
+          <h3>금관악기</h3>
+          23.호른 24.트럼펫 25.트럼본 26.튜바
+          <h3>건반악기</h3>
+          27.피아노 28.오르간 29.첼레스타 30.하프시코드
+        </p>
+        <button id="answer">답변하기</button>
+      </article>
+  </div>
+  </body>
+</html>
