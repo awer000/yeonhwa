@@ -42,8 +42,12 @@
       window.onload = function() {
         let start = document.getElementById('start')
 
+        function goBack() {
+          window.history.back()
+          location = location
+        }
         start.onclick = function () {
-          location.href="quiz2/19024809.html"
+          goBack()
         }
 
       }
@@ -61,6 +65,7 @@
         <p>탈락 하였습니다.
         </p>
         <button id="start" name="시작하기" value="시작하기">다시 도전하기</button>
+
       </article>
   </div>
   </body>
