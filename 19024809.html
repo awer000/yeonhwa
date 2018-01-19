@@ -1,0 +1,47 @@
+<!--1번째 입니다.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="kor">
+    <title>연화인 능력 검정 시험</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+      window.onload = function() {
+        let answer = document.getElementById('answer')
+
+        answer.onclick = function () {
+          let answer2 = prompt('답변을 입력해 주세요')
+          if (answer2 != '선풍기') {
+            alert('탈락')
+            location.replace("../sad.html")
+          } else {
+            location.href="TELFORMULA.html"
+          }
+        }
+        let logo = document.getElementById('logo')
+
+
+        logo.onclick = function () {
+          location.href="../index.html"
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <img id="logo" src="../picture/yeonhwa.jpg">
+      <h1>제 2 회 연화인 능력 검정 시험</h1>
+
+    </header>
+    <div id="article">
+      <article>
+        <img src="../picture/2joratul1.png">
+        <p>Q1. 위 사진에서 조원준이 내리친 것은 무엇인가?
+        </p>
+        <button id="answer">답변하기</button>
+      </article>
+  </div>
+  </body>
+</html>
